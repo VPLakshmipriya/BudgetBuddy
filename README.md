@@ -27,7 +27,7 @@ A fun and interactive expense tracker web application that helps users track the
 
 ## 🌐 Live Demo
 
-(Add your GitHub Pages link here after deployment)
+https://vplakshmipriya.github.io/BudgetBuddy/
 
 ---
 
