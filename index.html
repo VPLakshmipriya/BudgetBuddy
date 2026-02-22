@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BUDGET BUDDY</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="theme-toggle">
+    <input type="checkbox" id="themeSwitch" onchange="toggleTheme()">
+    <label for="themeSwitch" class="toggle-label">
+        <span class="toggle-ball"></span>
+        <span class="icon sun">☀</span>
+        <span class="icon moon">🌙</span>
+    </label>
+</div>
+    
+
+<div class="wrapper">
+    <div class="card">
+        <h1>Budget Buddy</h1>
+        <p class="subtitle">“No more ‘Where did my money go?’ moments.”</p>
+
+        <div class="form-group">
+            <label>Expense Title</label>
+            <input type="text" id="description" placeholder="e.g. Lunch at cafe">
+        </div>
+
+        <div class="form-group">
+            <label>Amount (₹)</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+        </div>
+
+        <div class="form-group">
+            <label>Category</label>
+            <select id="category">
+                <option>Food</option>
+                <option>Travel</option>
+                <option>Shopping</option>
+                <option>Bills</option>
+                <option>Other</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label>Date</label>
+            <input type="date" id="date">
+        </div>
+
+        <button class="add-btn" onclick="addExpense()">Add Expense</button>
+
+        <div class="nav-links">
+            <a href="view.html">View Expenses</a>
+            <a href="delete.html">Delete Expenses</a>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

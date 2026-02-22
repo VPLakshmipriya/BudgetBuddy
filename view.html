@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard - SmartSpend</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+<div class="wrapper">
+    <div class="card">
+
+        <div class="top-bar">
+    <h1>📊 Expense Dashboard</h1>
+
+    <div class="theme-toggle">
+        <input type="checkbox" id="themeSwitch" onchange="toggleTheme()">
+        <label for="themeSwitch" class="toggle-label">
+            <span class="toggle-ball"></span>
+            <span class="icon sun">☀</span>
+            <span class="icon moon">🌙</span>
+        </label>
+    </div>
+</div>
+
+        <div class="filter-box">
+            <label>Select Month:</label>
+            <input type="month" id="monthFilter" onchange="filterByMonth()">
+        </div>
+
+        <div class="total-box">
+            <h2>Total Spent</h2>
+            <h3>₹ <span id="total">0</span></h3>
+        </div>
+
+       <canvas id="expenseChart"></canvas>
+       <canvas id="monthlyChart"></canvas>
+        <div class="nav-links">
+            <a href="index.html">Add Expense</a>
+            <a href="delete.html">Delete Expense</a>
+        </div>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
