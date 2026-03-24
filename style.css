@@ -106,13 +106,13 @@ input:focus, select:focus {
     text-decoration: underline;
 }
 
-/* Animation */
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Responsive */
+
 @media (max-width: 480px) {
     .card {
         padding: 20px;
@@ -201,7 +201,7 @@ canvas {
     margin-top: 20px;
 }
 
-/* Dark Mode */
+
 .dark-mode {
     background: #121212;
 }
@@ -217,30 +217,30 @@ canvas {
     color: white;
     border: 1px solid #444;
 }
-/* Smooth transition */
+
 body {
     transition: background 0.4s ease, color 0.4s ease;
 }
 
-/* Dark Mode */
+
 body.dark-mode {
     background-color: #121212;
     color: white;
 }
 
-/* Toggle Container */
+
 .theme-toggle {
     position: absolute;
     top: 20px;
     right: 20px;
 }
 
-/* Hide checkbox */
+
 #themeSwitch {
     display: none;
 }
 
-/* Toggle Label */
+
 .toggle-label {
     width: 60px;
     height: 30px;
@@ -252,7 +252,7 @@ body.dark-mode {
     transition: background 0.3s;
 }
 
-/* Ball */
+
 .toggle-ball {
     width: 24px;
     height: 24px;
@@ -264,7 +264,7 @@ body.dark-mode {
     transition: 0.3s;
 }
 
-/* Icons */
+
 .icon {
     position: absolute;
     top: 4px;
@@ -279,7 +279,7 @@ body.dark-mode {
     right: 8px;
 }
 
-/* Dark Mode Toggle Movement */
+
 body.dark-mode .toggle-label {
     background: #333;
 }
