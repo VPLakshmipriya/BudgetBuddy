@@ -1,7 +1,6 @@
 let expenses = JSON.parse(localStorage.getItem("expenses")) || [];
 let chart;
 let monthlyChart;
-// ---------------- APPLY SAVED THEME ON PAGE LOAD ----------------
 window.onload = function () {
 
     const savedTheme = localStorage.getItem("theme");
@@ -13,13 +12,13 @@ window.onload = function () {
         if (switchBtn) switchBtn.checked = true;
     }
 
-    // Load correct page functions automatically
+    
     if (document.getElementById("expenseChart")) initDashboard();
     if (document.getElementById("expense-list")) renderExpenses();
     if (document.getElementById("delete-list")) renderDeletePage();
 };
 
-// ---------------- ADD EXPENSE ----------------
+
 function addExpense() {
     const description = document.getElementById("description").value.trim();
     const amount = document.getElementById("amount").value;
@@ -43,13 +42,13 @@ function addExpense() {
 
     alert("Expense Added Successfully!");
 
-    // Clear fields
+  
     document.getElementById("description").value = "";
     document.getElementById("amount").value = "";
     document.getElementById("date").value = "";
 }
 
-// ---------------- VIEW PAGE ----------------
+
 function renderExpenses() {
     const list = document.getElementById("expense-list");
     const totalDisplay = document.getElementById("total");
@@ -76,7 +75,7 @@ function renderExpenses() {
     totalDisplay.textContent = total.toFixed(2);
 }
 
-// ---------------- DELETE PAGE ----------------
+
 function renderDeletePage() {
     const list = document.getElementById("delete-list");
 
@@ -102,7 +101,6 @@ function deleteExpense(id) {
     renderDeletePage();
 }
 
-// ---------------- DASHBOARD ----------------
 function initDashboard() {
     renderChart(expenses);
     renderMonthlyChart();
@@ -207,8 +205,6 @@ function renderMonthlyChart() {
     });
 
 }
-
-// ---------------- MONTH FILTER ----------------
 function filterByMonth() {
     const selectedMonth = document.getElementById("monthFilter").value;
 
@@ -226,7 +222,7 @@ function filterByMonth() {
     calculateTotal(filtered);
 }
 
-// ---------------- DARK MODE ----------------
+
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 
